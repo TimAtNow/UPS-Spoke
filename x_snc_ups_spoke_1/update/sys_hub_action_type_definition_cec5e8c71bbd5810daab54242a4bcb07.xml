@@ -1,0 +1,1799 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation>Calculate Shipping Costs</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Prepare Shipment">b0c5a8c71bbd5810daab54242a4bcba7</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Calculate projected shipping costs given key variables.  </description>
+        <ih_action>false</ih_action>
+        <internal_name>calculate_cost</internal_name>
+        <label_cache>[{"name":"{{action.origin_postal_code}}","label":"action➛Origin Postal Code","type":"action","ref":""},{"name":"{{action.destination_postal_code}}","label":"action➛Destination Postal Code","type":"action","ref":""},{"name":"{{action.length}}","label":"action➛Length","type":"action","ref":""},{"name":"{{action.height}}","label":"action➛Height","type":"action","ref":""},{"name":"{{action.weight}}","label":"action➛Weight","type":"action","ref":""},{"name":"{{action.width}}","label":"action➛Width","type":"action","ref":""},{"name":"{{action.shipping_class}}","label":"action➛Shipping Class","type":"action","ref":""}]</label_cache>
+        <latest_snapshot>5126600b1bbd5810daab54242a4bcbf4</latest_snapshot>
+        <master_snapshot>a526a00b1bbd5810daab54242a4bcb6b</master_snapshot>
+        <name>Calculate Cost</name>
+        <natlang/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:26:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cec5e8c71bbd5810daab54242a4bcb07</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Calculate Cost</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_cec5e8c71bbd5810daab54242a4bcb07</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:57</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=cec5e8c71bbd5810daab54242a4bcb07"/>
+    <sys_variable_value action="delete_multiple" query="document_key=cec5e8c71bbd5810daab54242a4bcb07"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>cec5e8c71bbd5810daab54242a4bcb07</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:50</sys_created_on>
+        <sys_id>c026600b1bbd5810daab54242a4bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:50</sys_updated_on>
+        <value>5.54</value>
+        <variable display_value="">8826600b1bbd5810daab54242a4bcb5f</variable>
+    </sys_variable_value>
+    <sys_hub_action_input action="delete_multiple" query="model=cec5e8c71bbd5810daab54242a4bcb07^sys_idNOT IN0c26600b1bbd5810daab54242a4bcb2b,3b16600b1bbd5810daab54242a4bcb1f,4826600b1bbd5810daab54242a4bcb4a,8826600b1bbd5810daab54242a4bcb25,8c26600b1bbd5810daab54242a4bcb31,bf16e8c71bbd5810daab54242a4bcb05,c426600b1bbd5810daab54242a4bcb44"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b9d1336a-72b2-42c5-bd67-f75d881beb07</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>height</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Height</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">cec5e8c71bbd5810daab54242a4bcb07</model>
+        <model_id>cec5e8c71bbd5810daab54242a4bcb07</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:49</sys_created_on>
+        <sys_id>0c26600b1bbd5810daab54242a4bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=81146717-e44c-4c71-93c6-20f790453cac</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>destination_postal_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Destination Postal Code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">cec5e8c71bbd5810daab54242a4bcb07</model>
+        <model_id>cec5e8c71bbd5810daab54242a4bcb07</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:49</sys_created_on>
+        <sys_id>3b16600b1bbd5810daab54242a4bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4aa9be54-3463-4c9e-aea0-b892e3faaec3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>shipping_class</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Shipping Class</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">cec5e8c71bbd5810daab54242a4bcb07</model>
+        <model_id>cec5e8c71bbd5810daab54242a4bcb07</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:49</sys_created_on>
+        <sys_id>4826600b1bbd5810daab54242a4bcb4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=897eebea-4475-4fa5-a789-185520951f9d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>length</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Length</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">cec5e8c71bbd5810daab54242a4bcb07</model>
+        <model_id>cec5e8c71bbd5810daab54242a4bcb07</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:49</sys_created_on>
+        <sys_id>8826600b1bbd5810daab54242a4bcb25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=33c82e13-c934-49c2-ac1d-73710a3de7b1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>weight</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Weight</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">cec5e8c71bbd5810daab54242a4bcb07</model>
+        <model_id>cec5e8c71bbd5810daab54242a4bcb07</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:49</sys_created_on>
+        <sys_id>8c26600b1bbd5810daab54242a4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=35fe91b7-7a36-438f-b6ab-2d1675a6f4f0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>origin_postal_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Origin Postal Code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">cec5e8c71bbd5810daab54242a4bcb07</model>
+        <model_id>cec5e8c71bbd5810daab54242a4bcb07</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:49</sys_created_on>
+        <sys_id>bf16e8c71bbd5810daab54242a4bcb05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4ad112d0-f15d-47fe-a617-c7b66143ef66</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>width</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Width</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">cec5e8c71bbd5810daab54242a4bcb07</model>
+        <model_id>cec5e8c71bbd5810daab54242a4bcb07</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:49</sys_created_on>
+        <sys_id>c426600b1bbd5810daab54242a4bcb44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=cec5e8c71bbd5810daab54242a4bcb07^sys_idNOT IN8826600b1bbd5810daab54242a4bcb5f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=6b2dad5b-1d80-4a85-9aa6-b5e22bae8183</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Shipping Cost</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">cec5e8c71bbd5810daab54242a4bcb07</model>
+        <model_id>cec5e8c71bbd5810daab54242a4bcb07</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:50</sys_created_on>
+        <sys_id>8826600b1bbd5810daab54242a4bcb5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_cec5e8c71bbd5810daab54242a4bcb07^sys_idNOT IN0426600b1bbd5810daab54242a4bcb24,0826600b1bbd5810daab54242a4bcb30,0c26600b1bbd5810daab54242a4bcb5b,4026600b1bbd5810daab54242a4bcb43,8426600b1bbd5810daab54242a4bcb2a,b316600b1bbd5810daab54242a4bcb1e,c026600b1bbd5810daab54242a4bcb49"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>destination_postal_code</element>
+        <help/>
+        <hint/>
+        <label>Destination Postal Code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:49</sys_created_on>
+        <sys_id>0426600b1bbd5810daab54242a4bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>height</element>
+        <help/>
+        <hint/>
+        <label>Height</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:49</sys_created_on>
+        <sys_id>0826600b1bbd5810daab54242a4bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>shipping_class</element>
+        <help/>
+        <hint/>
+        <label>Shipping Class</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:50</sys_created_on>
+        <sys_id>0c26600b1bbd5810daab54242a4bcb5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>weight</element>
+        <help/>
+        <hint/>
+        <label>Weight</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:49</sys_created_on>
+        <sys_id>4026600b1bbd5810daab54242a4bcb43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>length</element>
+        <help/>
+        <hint/>
+        <label>Length</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:49</sys_created_on>
+        <sys_id>8426600b1bbd5810daab54242a4bcb2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>origin_postal_code</element>
+        <help/>
+        <hint/>
+        <label>Origin Postal Code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:49</sys_created_on>
+        <sys_id>b316600b1bbd5810daab54242a4bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>width</element>
+        <help/>
+        <hint/>
+        <label>Width</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:49</sys_created_on>
+        <sys_id>c026600b1bbd5810daab54242a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_cec5e8c71bbd5810daab54242a4bcb07^sys_idNOT IN8026600b1bbd5810daab54242a4bcb65"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>variable</element>
+        <help/>
+        <hint/>
+        <label>Shipping Cost</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_cec5e8c71bbd5810daab54242a4bcb07</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:50</sys_created_on>
+        <sys_id>8026600b1bbd5810daab54242a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=cec5e8c71bbd5810daab54242a4bcb07^sys_idNOT IN0626e00b1bbd5810daab54242a4bcb00"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Calculate Cost">cec5e8c71bbd5810daab54242a4bcb07</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"0626e00b1bbd5810daab54242a4bcb00","name":"plan"}}</plan>
+        <snapshot>5126600b1bbd5810daab54242a4bcbf4</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0626e00b1bbd5810daab54242a4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:58</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation>Calculate Shipping Costs</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Prepare Shipment">b0c5a8c71bbd5810daab54242a4bcba7</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Calculate projected shipping costs given key variables.  </description>
+        <internal_name>calculate_cost</internal_name>
+        <label_cache>[{"name":"{{action.origin_postal_code}}","label":"action➛Origin Postal Code","type":"action","ref":""},{"name":"{{action.destination_postal_code}}","label":"action➛Destination Postal Code","type":"action","ref":""},{"name":"{{action.length}}","label":"action➛Length","type":"action","ref":""},{"name":"{{action.height}}","label":"action➛Height","type":"action","ref":""},{"name":"{{action.weight}}","label":"action➛Weight","type":"action","ref":""},{"name":"{{action.width}}","label":"action➛Width","type":"action","ref":""},{"name":"{{action.shipping_class}}","label":"action➛Shipping Class","type":"action","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Calculate Cost</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="Calculate Cost">cec5e8c71bbd5810daab54242a4bcb07</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a526a00b1bbd5810daab54242a4bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:56</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=a526a00b1bbd5810daab54242a4bcb6b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a526a00b1bbd5810daab54242a4bcb6b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>a526a00b1bbd5810daab54242a4bcb6b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:57</sys_created_on>
+        <sys_id>b526a00b1bbd5810daab54242a4bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:57</sys_updated_on>
+        <value>5.54</value>
+        <variable display_value="">7526a00b1bbd5810daab54242a4bcbcc</variable>
+    </sys_variable_value>
+    <sys_hub_action_input action="delete_multiple" query="model=a526a00b1bbd5810daab54242a4bcb6b^sys_idNOT IN6526a00b1bbd5810daab54242a4bcb73,6526a00b1bbd5810daab54242a4bcb92,7926a00b1bbd5810daab54242a4bcbbd,a526a00b1bbd5810daab54242a4bcb6c,f526a00b1bbd5810daab54242a4bcb98,f526a00b1bbd5810daab54242a4bcbb7,f926a00b1bbd5810daab54242a4bcbc3"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=81146717-e44c-4c71-93c6-20f790453cac</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>destination_postal_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Destination Postal Code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">a526a00b1bbd5810daab54242a4bcb6b</model>
+        <model_id>a526a00b1bbd5810daab54242a4bcb6b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:56</sys_created_on>
+        <sys_id>6526a00b1bbd5810daab54242a4bcb73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=897eebea-4475-4fa5-a789-185520951f9d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>length</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Length</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">a526a00b1bbd5810daab54242a4bcb6b</model>
+        <model_id>a526a00b1bbd5810daab54242a4bcb6b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:56</sys_created_on>
+        <sys_id>6526a00b1bbd5810daab54242a4bcb92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4ad112d0-f15d-47fe-a617-c7b66143ef66</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>width</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Width</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">a526a00b1bbd5810daab54242a4bcb6b</model>
+        <model_id>a526a00b1bbd5810daab54242a4bcb6b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:56</sys_created_on>
+        <sys_id>7926a00b1bbd5810daab54242a4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=35fe91b7-7a36-438f-b6ab-2d1675a6f4f0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>origin_postal_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Origin Postal Code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">a526a00b1bbd5810daab54242a4bcb6b</model>
+        <model_id>a526a00b1bbd5810daab54242a4bcb6b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:56</sys_created_on>
+        <sys_id>a526a00b1bbd5810daab54242a4bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b9d1336a-72b2-42c5-bd67-f75d881beb07</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>height</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Height</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">a526a00b1bbd5810daab54242a4bcb6b</model>
+        <model_id>a526a00b1bbd5810daab54242a4bcb6b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:56</sys_created_on>
+        <sys_id>f526a00b1bbd5810daab54242a4bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=33c82e13-c934-49c2-ac1d-73710a3de7b1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>weight</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Weight</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">a526a00b1bbd5810daab54242a4bcb6b</model>
+        <model_id>a526a00b1bbd5810daab54242a4bcb6b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:56</sys_created_on>
+        <sys_id>f526a00b1bbd5810daab54242a4bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4aa9be54-3463-4c9e-aea0-b892e3faaec3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>shipping_class</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Shipping Class</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">a526a00b1bbd5810daab54242a4bcb6b</model>
+        <model_id>a526a00b1bbd5810daab54242a4bcb6b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:56</sys_created_on>
+        <sys_id>f926a00b1bbd5810daab54242a4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=a526a00b1bbd5810daab54242a4bcb6b^sys_idNOT IN7526a00b1bbd5810daab54242a4bcbcc"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=6b2dad5b-1d80-4a85-9aa6-b5e22bae8183</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Shipping Cost</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Calculate Cost">a526a00b1bbd5810daab54242a4bcb6b</model>
+        <model_id>a526a00b1bbd5810daab54242a4bcb6b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:57</sys_created_on>
+        <sys_id>7526a00b1bbd5810daab54242a4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_a526a00b1bbd5810daab54242a4bcb6b^sys_idNOT IN7126a00b1bbd5810daab54242a4bcb97,7126a00b1bbd5810daab54242a4bcbb6,7526a00b1bbd5810daab54242a4bcbc2,ed26a00b1bbd5810daab54242a4bcb71,ed26a00b1bbd5810daab54242a4bcb90,f126a00b1bbd5810daab54242a4bcbbc,f526a00b1bbd5810daab54242a4bcbc8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>length</element>
+        <help/>
+        <hint/>
+        <label>Length</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:56</sys_created_on>
+        <sys_id>7126a00b1bbd5810daab54242a4bcb97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>height</element>
+        <help/>
+        <hint/>
+        <label>Height</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:56</sys_created_on>
+        <sys_id>7126a00b1bbd5810daab54242a4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>width</element>
+        <help/>
+        <hint/>
+        <label>Width</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:56</sys_created_on>
+        <sys_id>7526a00b1bbd5810daab54242a4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>origin_postal_code</element>
+        <help/>
+        <hint/>
+        <label>Origin Postal Code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:56</sys_created_on>
+        <sys_id>ed26a00b1bbd5810daab54242a4bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>destination_postal_code</element>
+        <help/>
+        <hint/>
+        <label>Destination Postal Code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:56</sys_created_on>
+        <sys_id>ed26a00b1bbd5810daab54242a4bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>weight</element>
+        <help/>
+        <hint/>
+        <label>Weight</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:56</sys_created_on>
+        <sys_id>f126a00b1bbd5810daab54242a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>shipping_class</element>
+        <help/>
+        <hint/>
+        <label>Shipping Class</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:57</sys_created_on>
+        <sys_id>f526a00b1bbd5810daab54242a4bcbc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_a526a00b1bbd5810daab54242a4bcb6b^sys_idNOT IN3526a00b1bbd5810daab54242a4bcbde"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>variable</element>
+        <help/>
+        <hint/>
+        <label>Shipping Cost</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_a526a00b1bbd5810daab54242a4bcb6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:27:57</sys_created_on>
+        <sys_id>3526a00b1bbd5810daab54242a4bcbde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UPS" source="x_snc_ups_spoke_1">6fd424871bbd5810daab54242a4bcb74</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UPS">6fd424871bbd5810daab54242a4bcb74</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:27:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>
